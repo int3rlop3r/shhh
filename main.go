@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func fakemake() {
 	group := NewGroup("Test group")
 	record1 := NewRecord("Primary email", "a@x.y", "pass1")
 	group.AddRec(record1)
@@ -13,4 +13,8 @@ func main() {
 	for _, r := range group.Records {
 		fmt.Println("Title:", r.Title)
 	}
+}
+
+func main() {
+	fakemake()
 }
